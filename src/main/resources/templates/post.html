@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    </style>
+</head>
+
+
+<body>
+<div class="container">
+    <a th:href="@{/}">Home</a>
+    <div class="post">
+        <h2 th:text="${post.title}">Title</h2>
+        <h5 th:text="'Published by '+${post.account.firstName}">Account First Name</h5>
+        <h5 th:text="'Created at ' + ${post.createdAt}">Created At</h5>
+
+        <p th:text="${post.body}">body text</p>
+    </div>
+
+</div>
+
+</body>

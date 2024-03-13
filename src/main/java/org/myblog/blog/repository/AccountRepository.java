@@ -1,2 +1,7 @@
-package org.myblog.blog.repository;public class AccountRepository {
+package org.myblog.blog.repository;
+
+import org.myblog.blog.models.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AccountRepository extends JpaRepository<Account, Long> {
 }
